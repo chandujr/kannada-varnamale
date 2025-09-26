@@ -180,16 +180,16 @@ body.dark-mode th,td {
 }
 
 body.dark-mode ::-webkit-scrollbar-track {
-    background: #FFD95A;
+    background: #8B1A10;
 }
 
 body.dark-mode ::-webkit-scrollbar-thumb {
-    background-color: #8B1A10;
-    border: 2px solid #FFD95A;
+    background-color: #FFD95A;
+    border: 2px solid #8B1A10;
 }
 
 body.dark-mode * {
-    scrollbar-color: #8B1A10 #FFD95A;
+    scrollbar-color: #FFD95A #8B1A10;
 }
 
 body.dark-mode #theme-toggle {
