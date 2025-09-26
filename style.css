@@ -1,0 +1,72 @@
+body {
+    font-family: "Noto Sans Kannada", sans-serif;
+    font-size: 24px;
+    padding: 10px;
+}
+
+@media (max-width: 600px) {
+    body {
+        font-size: 18px;
+        padding: 8px;
+    }
+}
+
+.title-block {
+    text-align: center;
+    background: #74adf7;
+    padding: 4px;
+    margin-bottom: 16px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+        0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.table-wrapper {
+    overflow-x: auto;
+    max-height: 70vh;
+    margin-bottom: 16px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+        0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+th,
+td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: center;
+}
+
+td,
+td div {
+    font-size: 28px;
+}
+
+td div.fr-sub {
+    font-size: 16px;
+}
+
+thead th {
+    background: #74adf7;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    font-size: 22px;
+    white-space: pre-line;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #ffffff;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #d1e4fc;
+}
+
+tr.hl {
+    border-top: 4px solid #1877f2;
+}
