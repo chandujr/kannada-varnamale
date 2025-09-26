@@ -214,4 +214,8 @@ body.dark-mode #theme-toggle {
     thead th {
         font-size: 22px;
     }
+
+    #theme-toggle {
+        cursor: default;
+    }
 }
