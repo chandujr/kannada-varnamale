@@ -11,6 +11,16 @@ body {
     }
 }
 
+.warning-block {
+    position: sticky;
+    top: 0;
+    background: #D0342C;
+    color: #ffffff;
+    text-align: center;
+    padding: 4px;
+    margin-bottom: 16px;
+}
+
 .title-block {
     text-align: center;
     padding: 4px;

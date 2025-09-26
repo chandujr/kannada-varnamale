@@ -1,6 +1,9 @@
 const toggleButton = document.getElementById("theme-toggle");
 const body = document.body;
 
+const warningBlock = document.getElementById("warning-block");
+if (warningBlock) warningBlock.style.display = "none";
+
 let isDark = localStorage.getItem("theme") == "dark";
 
 updateModeUI();
