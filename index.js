@@ -1,12 +1,13 @@
 const toggleButton = document.getElementById("theme-toggle");
 const body = document.body;
 
-// Default is light mode
-let isDark = false;
+let isDark = localStorage.getItem("theme") == "dark";
+
 updateModeUI();
 
 toggleButton.addEventListener("click", () => {
   isDark = !isDark;
+  localStorage.setItem("theme", isDark ? "dark" : "light");
   updateModeUI();
 });
 
