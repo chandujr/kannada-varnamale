@@ -4,13 +4,6 @@ body {
     padding: 10px;
 }
 
-@media (max-width: 600px) {
-    body {
-        font-size: 18px;
-        padding: 8px;
-    }
-}
-
 .warning-block {
     position: sticky;
     top: 0;
@@ -51,7 +44,7 @@ td {
 
 td,
 td div {
-    font-size: 28px;
+    font-size: 36px;
 }
 
 td div.fr-sub {
@@ -62,7 +55,7 @@ thead th {
     position: sticky;
     top: 0;
     z-index: 2;
-    font-size: 22px;
+    font-size: 24px;
     white-space: pre-line;
     transition: all 0.3s, color 0.3s;
 }
@@ -90,7 +83,7 @@ thead th {
   border-radius: 50%;
   width: 50px;
   height: 50px;
-  font-size: 22px;
+  font-size: 28px;
   cursor: pointer;
   box-shadow: 0 4px 8px rgba(0,0,0,0.3);
   transition: all 0.3s, color 0.3s;
@@ -205,4 +198,20 @@ body.dark-mode * {
 body.dark-mode #theme-toggle {
     background: #8B1A10;
     color: #FFD95A;
+}
+
+@media (max-width: 600px) {
+    body {
+        font-size: 18px;
+        padding: 8px;
+    }
+
+    td,
+    td div {
+        font-size: 28px;
+    }
+
+    thead th {
+        font-size: 22px;
+    }
 }
