@@ -2,7 +2,6 @@ body {
     font-family: "Noto Sans Kannada", sans-serif;
     font-size: 24px;
     padding: 10px;
-    background: #ffe37d;
 }
 
 @media (max-width: 600px) {
@@ -14,17 +13,6 @@ body {
 
 .title-block {
     text-align: center;
-    background: #bb2a17;
-    color: #ffdb53;
-    padding: 4px;
-    margin-bottom: 16px;
-    border-radius: 8px;
-}
-
-.sub-title-block {
-    text-align: center;
-    background: #bb2a17;
-    color: #ffdb53;
     padding: 4px;
     margin-bottom: 16px;
     border-radius: 8px;
@@ -45,7 +33,6 @@ table {
 
 th,
 td {
-    border: 1px solid #a51b0a;
     padding: 8px;
     text-align: center;
 }
@@ -60,8 +47,6 @@ td div.fr-sub {
 }
 
 thead th {
-    background: #ffc52e;
-    color: #a51b0a;
     position: sticky;
     top: 0;
     z-index: 2;
@@ -69,35 +54,138 @@ thead th {
     white-space: pre-line;
 }
 
-tbody tr:nth-child(odd) {
-    background-color: #ffefa1;
-}
-
-tbody tr:nth-child(even) {
-    background-color: #ffefa1;
-}
-
-tr.hl {
-    border-top: 4px solid #a51b0a;
-}
-
 /* Works in Chrome, Edge, Safari */
 ::-webkit-scrollbar {
     width: 12px;
 }
 
-::-webkit-scrollbar-track {
-    background: #ffdb53;
-}
-
 ::-webkit-scrollbar-thumb {
-    background-color: #a51b0a;
     border-radius: 6px;
-    border: 2px solid #ffdb53;
 }
 
 /* For Firefox */
 * {
     scrollbar-width: thin;
-    scrollbar-color: #a51b0a #ffdb53;
+}
+
+/* Theme toggle Button */
+#theme-toggle {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  font-size: 22px;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+  transition: background 0.3s, color 0.3s;
+  z-index: 1000; /* stays above everything */
+}
+
+/* --------------- Themes --------------- */
+
+/* --------------- Light mode --------------- (default) */
+body.light-mode {
+  background-color: #ffe37d;
+  color: #000000;
+}
+
+body.light-mode .title-block {
+  background: #bb2a17;
+  color: #ffdb53;
+}
+
+body.light-mode thead th {
+  background: #ffc52e;
+  color: #a51b0a;
+}
+
+body.light-mode tbody tr:nth-child(odd) {
+  background: #ffefa1;
+  color: #111111;
+}
+
+body.light-mode tbody tr:nth-child(even) {
+  background: #ffefb1;
+  color: #111111;
+}
+
+body.light-mode tr.hl {
+  border-top: 4px solid #bb2a17;
+}
+
+body.light-mode th,td {
+  border: 1px solid #bb2a17;
+}
+
+body.light-mode ::-webkit-scrollbar-track {
+    background: #ffdb53;
+}
+
+body.light-mode ::-webkit-scrollbar-thumb {
+    background-color: #bb2a17;
+    border: 2px solid #ffdb53;
+}
+
+body.light-mode * {
+    scrollbar-color: #bb2a17 #ffdb53;
+}
+
+body.light-mode #theme-toggle {
+    background: #ffdb53;
+    color: #bb2a17;
+}
+
+/* --------------- Dark mode --------------- */
+body.dark-mode {
+  background-color: #1E1E1E;
+  color: #FFFFFF;
+}
+
+body.dark-mode .title-block {
+  background: #8B1A10;
+  color: #FFD95A;
+}
+
+body.dark-mode thead th {
+  background: #A53A1C;
+  color: #FFD37A;
+}
+
+body.dark-mode tbody tr:nth-child(odd) {
+  background: #2b2b2b;
+  color: #e0e0e0;
+}
+
+body.dark-mode tbody tr:nth-child(even) {
+  background: #1b1b1b;
+  color: #e0e0e0;
+}
+
+body.dark-mode tr.hl {
+  border-top: 4px solid #8B1A10;
+}
+
+body.dark-mode th,td {
+  border: 1px solid #8B1A10;
+}
+
+body.dark-mode ::-webkit-scrollbar-track {
+    background: #FFD95A;
+}
+
+body.dark-mode ::-webkit-scrollbar-thumb {
+    background-color: #8B1A10;
+    border: 2px solid #FFD95A;
+}
+
+body.dark-mode * {
+    scrollbar-color: #8B1A10 #FFD95A;
+}
+
+body.dark-mode #theme-toggle {
+    background: #8B1A10;
+    color: #FFD95A;
 }
