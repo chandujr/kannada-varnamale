@@ -2,6 +2,7 @@ body {
     font-family: "Noto Sans Kannada", sans-serif;
     font-size: 24px;
     padding: 10px;
+    background: #FAE17C;
 }
 
 @media (max-width: 600px) {
@@ -13,12 +14,20 @@ body {
 
 .title-block {
     text-align: center;
-    background: #74adf7;
+    background: #ffc625;
+    color: #c71e18;
     padding: 4px;
     margin-bottom: 16px;
     border-radius: 8px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
-        0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.sub-title-block {
+    text-align: center;
+    background: #c71e18;
+    color: #ffc625;
+    padding: 4px;
+    margin-bottom: 16px;
+    border-radius: 8px;
 }
 
 .table-wrapper {
@@ -36,7 +45,7 @@ table {
 
 th,
 td {
-    border: 1px solid #ccc;
+    border: 1px solid #ffe24b;
     padding: 8px;
     text-align: center;
 }
@@ -51,7 +60,8 @@ td div.fr-sub {
 }
 
 thead th {
-    background: #74adf7;
+    background: #c71e18;
+    color: #ffd821;
     position: sticky;
     top: 0;
     z-index: 2;
@@ -60,13 +70,34 @@ thead th {
 }
 
 tbody tr:nth-child(odd) {
-    background-color: #ffffff;
+    background-color: #fff7b2;
 }
 
 tbody tr:nth-child(even) {
-    background-color: #d1e4fc;
+    background-color: #fff7b2;
 }
 
 tr.hl {
-    border-top: 4px solid #1877f2;
+    border-top: 4px solid #c71e18;
+}
+
+/* Works in Chrome, Edge, Safari */
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-track {
+    background: #ffc625;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #c71e17;
+    border-radius: 6px;
+    border: 2px solid #ffc625;
+}
+
+/* For Firefox */
+* {
+    scrollbar-width: thin;
+    scrollbar-color: #c71e17 #ffc625;
 }
