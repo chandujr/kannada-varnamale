@@ -18,7 +18,7 @@ body {
     text-align: center;
     padding: 4px;
     margin-bottom: 16px;
-    border-radius: 8px;
+    border-radius: 4px;
     transition: all 0.3s, color 0.3s;
 }
 
@@ -66,7 +66,7 @@ thead th {
 }
 
 ::-webkit-scrollbar-thumb {
-    border-radius: 6px;
+    border-radius: 4px;
 }
 
 /* For Firefox */
@@ -94,7 +94,7 @@ thead th {
     transform: scale(0.75);
 }
 
-/* --------------- Themes --------------- */
+/* --------------- Themes START --------------- */
 
 /* --------------- Light mode --------------- (default) */
 body.light-mode {
@@ -146,6 +146,15 @@ body.light-mode * {
 body.light-mode #theme-toggle {
     background: #ffdb53;
     color: #bb2a17;
+}
+
+body.light-mode .issue-link {
+    color: #bb2a17;
+}
+
+body.light-mode .issue-icon {
+    background: url("github-mark.svg");
+    background-size: contain;
 }
 
 /* --------------- Dark mode --------------- */
@@ -200,6 +209,39 @@ body.dark-mode #theme-toggle {
     color: #FFD95A;
 }
 
+body.dark-mode .issue-link {
+    color: #FFD95A;
+}
+
+body.dark-mode .issue-icon {
+    background: url("github-mark-white.svg");
+    background-size: contain;
+}
+
+/* --------------- Themes END --------------- */
+
+.footer {
+  text-align: left;
+  margin-top: 24px;
+  font-size: 13px;
+}
+
+.issue-link {
+  text-decoration: none;
+  display: inline-flex;
+  align-items: flex-end;
+  gap: 4px;
+}
+
+.issue-link:hover {
+  text-decoration: underline;
+}
+
+.issue-icon {
+  width: 24px;
+  height: 24px;
+}
+
 @media (max-width: 600px) {
     body {
         font-size: 18px;
@@ -217,5 +259,9 @@ body.dark-mode #theme-toggle {
 
     #theme-toggle {
         cursor: default;
+    }
+
+    .issue-link {
+      text-decoration: underline;
     }
 }
