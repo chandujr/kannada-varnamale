@@ -88,9 +88,6 @@ thead th {
   box-shadow: 0 4px 8px rgba(0,0,0,0.3);
   transition: all 0.3s, color 0.3s;
   z-index: 1000; /* stays above everything */
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 #theme-toggle:active {
@@ -147,8 +144,8 @@ body.light-mode * {
 }
 
 body.light-mode #theme-toggle {
-    background: #ffdb53;
-    color: #bb2a17;
+    background: url("theme-icon-light.svg");
+    background-size: contain;
 }
 
 body.light-mode .issue-link {
@@ -208,8 +205,8 @@ body.dark-mode * {
 }
 
 body.dark-mode #theme-toggle {
-    background: #8B1A10;
-    color: #FFD95A;
+    background: url("theme-icon-dark.svg");
+    background-size: contain;
 }
 
 body.dark-mode .issue-link {

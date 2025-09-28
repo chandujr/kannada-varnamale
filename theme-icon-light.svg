@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 244 244" role="img" aria-label="Yin Yang symbol">
+  <title>Yin Yang (Taijitu)</title>
+
+  <!-- Background circle -->
+  <circle cx="122" cy="122" r="122" fill="#ffdb53"/>
+
+  <!-- Outer circle -->
+  <circle cx="122" cy="122" r="79" fill="#bb2a17" stroke="#bb2a17" stroke-width="10"/>
+
+  <!-- White half (top swirl) -->
+  <path d="M122,43
+           A79,79 0 0,0 122,201
+           A39.5,39.5 0 0,1 122,122
+           A39.5,39.5 0 0,0 122,43Z"
+        fill="#ffdb53"/>
+
+  <!-- Small inner circles (eyes) -->
+  <circle cx="122" cy="82.5" r="12.65" fill="#bb2a17"/>
+  <circle cx="122" cy="161.5" r="12.65" fill="#ffdb53"/>
+</svg>
