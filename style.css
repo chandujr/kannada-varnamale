@@ -31,8 +31,6 @@ body {
 table {
     border-collapse: collapse;
     width: 100%;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
-        0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 th,
@@ -107,6 +105,13 @@ body.light-mode .title-block {
   color: #ffdb53;
 }
 
+body.light-mode thead {
+    filter: drop-shadow(0px 2px 4px #bb2a17);
+    -webkit-box-shadow: 0px 2px 4px #bb2a17;
+    box-shadow: 0px 2px 4px #bb2a17;
+
+}
+
 body.light-mode thead th {
   background: #ffc52e;
   color: #a51b0a;
@@ -166,6 +171,13 @@ body.dark-mode {
 body.dark-mode .title-block {
   background: #8B1A10;
   color: #FFD95A;
+}
+
+body.dark-mode thead {
+    filter: drop-shadow(0px 2px 4px #8B1A10);
+    -webkit-box-shadow: 0px 2px 4px #8B1A10;
+    box-shadow: 0px 2px 4px #8B1A10;
+
 }
 
 body.dark-mode thead th {
